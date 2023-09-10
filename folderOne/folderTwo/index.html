@@ -93,23 +93,23 @@
     </li>
 </ol>
 
-<form action="" id="form">
-    <div><input type="text" placeholder="ФИО"></div> <br>
-    <div><input type="tel" placeholder="tel"></div> <br>
-    <div> <input type="email" placeholder="email"></div> <br>
-    <div>
+<form action="/" id="form" method="POST">
+    <label><input type="text" placeholder="fullName" name="name"></label> <br>
+    <label><input type="tel" placeholder="phone" name="phone"></label> <br>
+    <label> <input type="email" placeholder="email" name="email"></label> <br>
+    <label>
         enter your date of birth:  
-        <input type="date" placeholder="dateBirth"></div> <br>
+        <input type="date" value="2023-09-10" name="date"></label> <br>
     
-    <div>
+    <label>
         <span> Your gender:</span> <br>
         <input type="radio" value="men"  name="gender">
         <span> men</span>
         <input type="radio" value="women"  name="gender">
         <span>women</span>
-    </div><br>
-    <div>
-        <select>
+    </label><br>
+    <label>
+        <select name="favProgLang">
             <option value="">--Your favorute programming language--</option>
             <option value="Pascal">Pascal</option>
             <option value=" C++"> C++</option>
@@ -123,14 +123,14 @@
             <option value="Prolog">Prolog</option>
             <option value="Scala">Scala</option>
         </select>
-    </div>  <br>
-    <div>
+    </label>  <br>
+    <label>
         <span> Your biography:</span> <br>
-        <textarea name="biography" cols="30" rows="10"></textarea>
-    </div> <br>
-    <div>
+        <textarea name="biography"  placeholder="..."></textarea>
+    </label> <br>
+    <label>
         <span>с контрактом ознакомлен</span>
-        <input type="checkbox">
-    </div> <br>
-    <button type="submit"> Save</button>
+        <input type="checkbox" name="check">
+    </label> <br>
+    <button type="submit" value="save"> Save</button>
 </form>
