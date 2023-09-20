@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2 WEB</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="main-aside-wrapper">
+        <header>
+            <div class="heading">
+                <img src="/image.jpg" alt="img" class="logo" />
+                <div class="title  header-title">TASK2</div>
+            </div>
+        </header>
+
+        <nav class="navigation">
+            <div class="nav-links">
+                <a href="#links">список гиперсыллок</a>
+                <a href="#table">таблица</a>
+                <a href="#form">форма</a>
+            </div>
+        </nav>
+
+        <main class="main">
+           
+            <div  id="table" class="table-wrapper">
+                <div class="title">Таблица</div>
+                <table>
+                    <tr>
+                        <td>top left</td>
+                        <td> top right</td>
+                    </tr>
+                    <tr>
+                        <td>bottom left</td>
+                        <td>bottom right</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="links-wrapper" id="links">
+                <div class="title">Список гиперссылок</div>
+                <ol id="list">
+                    <li>
+                        <!-- абсолютную гиперссылку на главную страницу сайта kubsu.ru" -->
+                        <a href="http://www.kubsu.ru/" > КубГУ</a> </li>
+                    <li>
+                        <!-- "абсолютную на главную сайта kubsu.ru в протоколе https" -->
+                        <a href="https://www.kubsu.ru/" > КубГУ</a></li>
+                    <li>
+                        <!-- "ссылку-изображение" -->
+                        <a href="https://www.kubsu.ru/" > <img src="https://img.freepik.com/premium-vector/a-stack-of-books-an-open-book-and-a-pencil-school-supplies_69317-595.jpg" alt="photo"  style="width:200px;"></a></li>
+                    <li>
+                        <!-- "сокращенную ссылку на внутреннюю страницу" -->
+                        <a href="/folderOne/folderTwo/onOneLevel.html" > сокращенную ссылку на внутреннюю страницу(на страницу на одноим уровне с index.html)</a>
+                    </li>
+                    <li>
+                    <!-- "сокращенную ссылку на главную страницу" -->
+                        <a href="/folderOne/folderTwo/index.html" >сокращенную ссылку на главную страницу(на index.html)</a>
+                    </li>
+                    <li>
+                        <!-- "ссылку на фрагмент текущей страницы" -->
+                        <a href="#form" >ссылку на фрагмент текущей страницы(ссылка на FORM)</a>
+                    </li>
+                    <li>
+                        <!-- ссылку с тремя параметрами в URL" -->
+                        <a href="https://ru.wikipedia.org/wiki/JavaScript?id=mw-content-text&lang=ru&dir=ltr" >ссылку с тремя параметрами в URL</a>
+                    </li>
+                    <li>
+                        <!-- "ссылку с параметром id в URL" -->
+                        <a href="https://ru.wikipedia.org/wiki/JavaScript?id=mw-content-text">ссылку с параметром id в URL</a>
+                    </li>
+                    <li>
+                        <!-- "относительную на страницу в текущем каталоге" -->
+                        <a href="./onOneLevel.html" >относительную на страницу в текущем каталоге</a>
+                    </li>
+                    <li>
+                        <!-- относительную на страницу в каталоге about -->
+                        <a href="/about/about.html"> относительную на страницу в каталоге about</a>
+                    </li>
+                    <li>
+                        <!-- относительную на страницу в каталоге уровнем выше текущего -->
+                        <a href="../onOneLevelUp.html" >относительную на страницу в каталоге уровнем выше текущего</a>
+                    </li>
+                    <li>
+                        <!-- относительную на страницу в каталоге двумя уровнями выше -->
+                        <a href="../../onTwoLevelUp.html" >относительную на страницу в каталоге двумя уровнями выше</a>
+                    </li>
+                    <li>
+                        <!-- "контекстную в тексте абзаца" -->
+                    <p> В Краснодарском крае одним из лучших университетов является <a href="https://www.kubsu.ru/" > КубГУ</a></p>
+                    </li>
+                    <li>
+                        <!-- ссылку на фрагмент страницы стороннего сайта -->
+                        <a href="https://ru.wikipedia.org/wiki/JavaScript#mw-content-text" >ссылку на фрагмент страницы стороннего сайта</a>
+                    </li>
+                    <li >
+                    <!-- title="ссылки из прямоугольных и круглых областей картинки (HTML-тег map)"> -->
+                        <map name="planetmap">
+                            <area shape="circle" alt="circle" coords="280,122,116" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3">
+                            <area shape="rect" alt="rect" coords="409,4,633,238" href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA">
+                        </map>
+                    <img src="./figure.png" alt="tree"  usemap="#planetmap" >
+                    </li>
+                    <li>
+                        <!-- "ссылку с пустым href" -->
+                        <a href=" " >ссылка с пустым href</a>
+                    </li>
+                    <li>
+                        <!-- "ссылку без href" -->
+                        <a>ссылка без href </a>
+                    </li>
+                    <li>
+                        <!-- ссылку, по которой запрещен переход поисковикам-->
+                        <a href="https://www.kubsu.ru/" rel=”nofollow”>ссылку, по которой запрещен переход поисковикам</a>
+                    </li>
+                    <li>
+                        <!-- запрещенную для индексации поисковиками -->
+                        <!--<noindex>--><a href="https://www.kubsu.ru/" title="запрещенную для индексации поисковиками">запрещенную для индексации поисковиками</a><!--</noindex>-->
+                    </li>
+                    <li>
+                        <!-- нумерованный список ссылок с подписями title -->
+                        <ol>
+                            <li><a href="https://www.kubsu.ru/" title="1">нумерованный список ссылок с подписями title</a></li>
+                            <li><a href="https://www.kubsu.ru/" title="1">нумерованный список ссылок с подписями title</a></li> 
+                        </ol>
+                    </li>
+                    <li> 
+                        <!-- ссылку на файл на сервере FTP с авторизацией -->
+                        <a href="ftp://user:password@example.com/myfile.zip">ссылку на файл на сервере FTP с авторизацией</a>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="form-wrapper" id="form">
+                <div class="title">Форма</div>
+                <form action="/" method="POST">
+                    <label><input type="text" placeholder="fullName" name="name"></label> <br>
+                    <label><input type="tel" placeholder="phone" name="phone"></label> <br>
+                    <label> <input type="email" placeholder="email" name="email"></label> <br>
+                    <label>
+                        <span>enter your date of birth:  </span> 
+                        <input type="date" value="2023-09-10" name="date">
+                    </label> <br>
+                    <label>
+                        <span> Your gender:</span>
+                        <input type="radio" value="men"  name="gender">
+                        <span> men</span>
+                        <input type="radio" value="women"  name="gender">
+                        <span>women</span>
+                    </label> <br>
+
+                    <label>
+                        <select name="favProgLang">
+                            <option value="">--Your favorute programming language--</option>
+                            <option value="Pascal">Pascal</option>
+                            <option value=" C++"> C++</option>
+                            <option value="C">C</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="PHP">PHP</option>
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                            <option value="Haskel">Haskel</option>
+                            <option value="Clojure">Clojure</option>
+                            <option value="Prolog">Prolog</option>
+                            <option value="Scala">Scala</option>
+                        </select>
+                    </label>  <br>
+                    <label>
+                        <span> Your biography:</span> <br>
+                        <textarea name="biography"  placeholder="..."></textarea>
+                    </label> <br>
+                    <label>
+                        <span>с контрактом ознакомлен</span>
+                        <input type="checkbox" name="check">
+                    </label> <br>
+                    <button type="submit" value="save"> Save</button>
+                </form>
+            </div>
+            
+            
+        </main>
+
+        <footer class="footer">
+            <div> Изам Н А</div> 
+        </footer>
+    </div>
+    
+</body>
+</html>
