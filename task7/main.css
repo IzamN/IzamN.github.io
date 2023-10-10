@@ -16,7 +16,7 @@ body{
 }
 .slider__item img{
     margin: 0 auto;
-    width:400px;
+    width:100%;
     height:200px;
 }
 
