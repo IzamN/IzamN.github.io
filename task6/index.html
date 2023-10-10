@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <form id="form1">
+        <div class="container">
+            <div class="products-wrapper">
+                <div class="products-title title">Choose friut</div>
+                <div class="select__wrapper">
+                    <select name="products" class="products">
+                        <option value="">choose product...</option>
+                        <option value="23"  id="products">Apple  23 $</option>
+                        <option value="10" id="products">Banana  10  $</option>
+                        <option value="44" id="products">Orange 44 $</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="enter-wrapper">
+                <h2 class="enter-title title">Enter the number</h2>
+                <input type="number" class="number" placeholder="enter number...">
+            </div>
+
+            <div class="calculate-wrapper">
+                <h2 class="calculate-title title">Calculate</h2>
+                <div class="calculate-info">
+                    <input type="text" class="result">
+                    <button type="button" class="count-button">Count </button>
+                    <button type="button" class="clear-button"> Clear</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <form id="form2">
+        <div class="container">
+            <div class="products-wrapper">
+                <div class="products-title title">Choose service and then enter count   <input type="number" class="numberOfservices" placeholder="enter number..." value="1" ></div>
+     
+                    <div class="products">
+
+                        <div class="product-item">
+                            <div class="info-product">
+                                <input type="radio" name="product" id="1">
+                                <span class="product-title">nail treatment</span>
+                                <fieldset data-id="1" class="none">
+                                    <div class="initial__cost">initial cost: <span> 1100</span></div>
+                                    <div class="final__cost"> final cost: <span>1100</span></div>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="info-product"> 
+                                <input type="radio" name="product" id="2">
+                                <span class="product-title">pedicur</span>       
+                                <fieldset data-id="2" class="none">
+                                    <div class="initial__cost">initial cost: <span> 1400</span></div>
+                                    <div class="final__cost"> final cost: <span>1400</span></div>
+                                    <select name="typePedicur" id="" class="typePedicur">                                       
+                                        <option value="0" id="typePedicur">classic </option>
+                                        <option value="300" id="typePedicur">french (+300)</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                        </div>
+                
+                        <div class="product-item">   
+                            <div class="info-product">
+                                <input type="radio" name="product" id="3">
+                                <span class="product-title">manicur</span>
+                                <fieldset data-id="3" class="none">
+                                    <div class="initial__cost">initial cost: <span> 1600</span></div>
+                                    <div class="final__cost"> final cost: <span>1600</span></div>
+                                    <form action="" class="colorOfNail">
+                                        <label for="!"> choose color of nail: </label>  <br>
+                                        <input type="checkbox" id="red"  value="100" class="color" > 
+                                        <label for="red">red (+100)</label><br>
+                                        <input type="checkbox" id="blue" value="200" class="color">
+                                        <label for="blue" >blue (+200)</label> <br>
+                                        <input type="checkbox" id="yellow"  value="300" class="color" >
+                                        <label for="yellow" >yellow (+300)</label> <br>
+                                        <input type="checkbox" id="black"  value="400" class="color" >
+                                        <label for="black" >black (+400)</label>
+                                    </form>
+                                </fieldset>   
+                            </div> 
+                        </div>
+
+                    </div> 
+                                                
+            </div>
+        </div>
+    </form>
+    <script defer src="./main.js"> </script>
+</body>
+</html>

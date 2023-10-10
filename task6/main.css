@@ -1,0 +1,92 @@
+.container {
+    padding: 15px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+}
+body form+*{
+    margin-top: 30px;
+}
+form{
+    padding: 15px;
+    border: 1px dotted #000;
+}
+.none{
+    display: none;
+}
+
+.products-title{
+    font-weight: 700;
+    font-size: 25px;
+}
+.products-wrapper{
+    margin-bottom: 30px;
+}
+.products {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 15px;   
+}
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+.number{
+    text-align: center;
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+}
+.enter-wrapper{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.calculate-wrapper {
+    text-align: center;
+}
+.calculate-info *+* {
+    margin-left: 20px;
+    
+}
+button{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+}
+.result {
+    text-align: center;
+    display: inline-block;
+    height: 40px; 
+    font-size: 20px;
+    
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.product-title {
+    font-weight: 500;
+    font-size: 20px;
+}
+.product-cost {
+    max-width: 200px;
+}
+.numberOfservices{
+    max-width: 50px;
+}
+fieldset{
+    margin-top: 20px;
+}
+.products{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.products .product-item+*{
+    margin-left: 0;
+    margin-top: 30px;
+}
