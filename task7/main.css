@@ -14,9 +14,9 @@ body{
 .slider__item {
     padding: 0px 15px;
 }
-.slider__item img{
-  
-    width:100%;
+.slider__item{
+      
+    width:200px;
     height:200px;
 }
 
