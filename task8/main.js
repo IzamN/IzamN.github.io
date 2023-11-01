@@ -11,8 +11,8 @@ const organization=document.querySelector('.organization')
 const comment=document.querySelector('.comment')
 const heplerText=document.querySelector('.helper-text')
 const policy=document.querySelector('.policy')
-
-if (localStorage.getItem('lastRequiest')){
+const init=function(){
+    if (localStorage.getItem('lastRequiest')){
     const data=JSON.parse(localStorage.getItem('lastRequiest'));
     name.value=data.name;
     email.value=data.email;
@@ -22,6 +22,8 @@ if (localStorage.getItem('lastRequiest')){
     comment.value=data.comment;
 
 }
+}
+
 
 const validateName=function(){return (String(name.value).length>=6)}
 const validateEmail=function(){ return (email.value.match(/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i)) }
@@ -30,7 +32,8 @@ const validateOrganization=function(){ return (String(organization.value).length
 const validatePolicy=function(){return policy.checked}
 btnOpen.addEventListener('click', function(){
     history.pushState({},"popup","?form");
-   popup.classList.add('open')
+   popup.classList.add('open');
+    init();
 })
 
 btnBack.addEventListener('click', function(e){
